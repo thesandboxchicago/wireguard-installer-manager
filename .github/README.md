@@ -54,7 +54,7 @@ In your `/etc/wireguard/clients` directory, you will have `.conf` files. These a
 * `PRIVATE_SUBNET_V6` - private subnet configuration, `fd42:42:42::0/64` by default
 * `SERVER_HOST_V4` - public IPv4 address, detected by default using `wget`
 * `SERVER_HOST_V6` - public IPv6 address, detected by default using `wget`
-* `SERVER_PUB_NIC` - public nig address, decected by default
+* `SERVER_PUB_NIC` - public nig address, detected by default
 * `SERVER_PORT` - public port for wireguard server, default is `51820`
 * `DISABLE_HOST` - Disable or enable ipv4 and ipv6 
 * `CLIENT_ALLOWED_IP` - 
