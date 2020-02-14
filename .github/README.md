@@ -8,7 +8,7 @@
 ### Prerequisite 
 - CentOS, Debian, Ubuntu, Arch, Fedora, Redhat, Raspbian
 - Linux Kernel 4.1 or newer
-- You will need root access, or a user account with `sudo` privilege.
+- You will need root access or a user account with `sudo` privilege.
 
 ### Installation
 
@@ -17,7 +17,7 @@
 wget https://raw.githubusercontent.com/complexorganizations/wireguard-install/master/wireguard-server.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-server.sh
 ```
-The first time you run it, you'll have to follow the assistant and answer a few questions to setup your VPN server.
+The first time you run it, you'll have to follow the assistant and answer a few questions to set up your VPN server.
 
 ***Client Installation***
 ```
@@ -44,7 +44,7 @@ In your `/etc/wireguard/clients` directory, you will have `.conf` files. These a
 - Iptables rules and forwarding managed in a seamless way
 - If needed, the script can cleanly remove WireGuard, including configuration and iptables rules
 - Variety of DNS resolvers to be pushed to the clients
-- Choice to use a self-hosted resolver with Unbound.
+- The choice to use a self-hosted resolver with Unbound.
 - Block DNS leaks
 - Many other little things!
 
@@ -119,7 +119,7 @@ Which WireGuard client do you recommend?
 - Android: [WireGuard](https://play.google.com/store/apps/details?id=com.wireguard.android).
 - iOS: [WireGuard](https://itunes.apple.com/us/app/wireguard/id1441195209).
 
-Is there an WireGuard documentation?
+Is there WireGuard documentation?
 - Yes, please head to the [WireGuard Manual](https://www.wireguard.com), which references all the options.
 
 How do i install wireguard without the questions? (Headless Install) ***Server Only***
