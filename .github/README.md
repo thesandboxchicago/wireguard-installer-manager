@@ -40,7 +40,7 @@ In your `/etc/wireguard/clients` directory, you will have `.conf` files. These a
 ---
 ### Features
 - Installs and configures a ready-to-use WireGuard Interface
-- IPv6 Supported, Leak Protection
+- IPv6 Supported, IPv6 Leak Protection
 - Iptables rules and forwarding managed in a seamless way
 - If needed, the script can cleanly remove WireGuard, including configuration and iptables rules
 - Variety of DNS resolvers to be pushed to the clients
