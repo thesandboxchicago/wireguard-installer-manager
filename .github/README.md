@@ -34,6 +34,7 @@ bash /etc/wireguard/wireguard-server.sh
 ```
 docker pull ubuntu
 docker run -it ubuntu
+apt-get update && apt-get install wget -y
 wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-server.sh
 ```
