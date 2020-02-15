@@ -1,4 +1,4 @@
-# Secure Wireguard Installer
+# Secure Wireguard Installer / Manager
 [![GitHub release](https://img.shields.io/github/v/release/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/releases)
 [![ShellCheck](https://github.com/complexorganizations/wireguard-install/workflows/ShellCheck/badge.svg)](https://github.com/complexorganizations/wireguard-install/actions)
 [![GitHub issues](https://img.shields.io/github/issues/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/issues)
