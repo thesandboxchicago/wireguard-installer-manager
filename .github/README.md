@@ -1,9 +1,9 @@
 # Secure Wireguard Installer / Manager
-[![GitHub release](https://img.shields.io/github/v/release/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/releases)
-[![ShellCheck](https://github.com/complexorganizations/wireguard-install/workflows/ShellCheck/badge.svg)](https://github.com/complexorganizations/wireguard-install/actions)
-[![GitHub issues](https://img.shields.io/github/issues/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/graphs/contributors)
-[![GitHub forks](https://img.shields.io/github/forks/complexorganizations/wireguard-install?style=social)](https://github.com/complexorganizations/wireguard-install/fork)
+[![GitHub release](https://img.shields.io/github/v/release/complexorganizations/wireguard-installer-manager)](https://github.com/complexorganizations/wireguard-install/releases)
+[![ShellCheck](https://github.com/complexorganizations/wireguard-installer-manager/workflows/ShellCheck/badge.svg)](https://github.com/complexorganizations/wireguard-install/actions)
+[![GitHub issues](https://img.shields.io/github/issues/complexorganizations/wireguard-installer-manager)](https://github.com/complexorganizations/wireguard-install/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/complexorganizations/wireguard-installer-manager)](https://github.com/complexorganizations/wireguard-install/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/complexorganizations/wireguard-installer-manager?style=social)](https://github.com/complexorganizations/wireguard-install/fork)
 
 ---
 **What is WireGuard?**
@@ -26,14 +26,14 @@
 
 ***Server Installation***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-install/master/wireguard-server.sh -P /etc/wireguard/
+wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-server.sh
 ```
 The first time you run it, you'll have to follow the assistant and answer a few questions to set up your VPN server.
 
 ***Client Installation***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-install/master/wireguard-client.sh -P /etc/wireguard/
+wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-client.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-client.sh
 ```
 
@@ -153,12 +153,12 @@ Use a browser based development environment:
 
 ***Debugging Server***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-install/master/wireguard-server.sh -P /etc/wireguard/
+wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
 bash -x /etc/wireguard/wireguard-server.sh >> /etc/wireguard/wireguard-server.log
 ```
 ***Debugging Client***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-install/master/wireguard-client.sh -P /etc/wireguard/
+wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-client.sh -P /etc/wireguard/
 bash -x /etc/wireguard/wireguard-server.sh >> /etc/wireguard/wireguard-client.log
 ```
 ___
