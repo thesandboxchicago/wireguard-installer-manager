@@ -22,25 +22,22 @@
 - Linux Kernel 4.1 or newer
 - You will need root access or a user account with `sudo` privilege.
 
+---
 ### Installation
-
 ***Server Installation***
 ```
 wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-server.sh
 ```
-The first time you run it, you'll have to follow the assistant and answer a few questions to set up your VPN server.
+In your `/etc/wireguard/clients` directory, you will have `.conf` files. These are the client configuration files. Download them from your WireGuard Interface and connect using your favorite WireGuard Peer.
 
 ***Client Installation***
 ```
 wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-client.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-client.sh
 ```
-
 ---
 ### After Installation
-In your `/etc/wireguard/clients` directory, you will have `.conf` files. These are the client configuration files. Download them from your WireGuard Interface and connect using your favorite WireGuard Peer.
-
 - Show WireGuard Interface
 - Start WireGuard Interface
 - Stop WireGuard Interface
