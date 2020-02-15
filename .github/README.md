@@ -24,18 +24,17 @@
 
 ---
 ### Installation
-***Server Installation***
+***Installation***
 ```
 wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
 bash /etc/wireguard/wireguard-server.sh
 ```
-In your `/etc/wireguard/clients` directory, you will have `.conf` files. These are the client configuration files. Download them from your WireGuard Interface and connect using your favorite WireGuard Peer.
 
-***Client Installation***
+***Docker Installation***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-client.sh -P /etc/wireguard/
-bash /etc/wireguard/wireguard-client.sh
+
 ```
+In your `/etc/wireguard/clients` directory, you will have `.conf` files. These are the client configuration files. Download them from your WireGuard Interface and connect using your favorite WireGuard Peer.
 ---
 ### After Installation
 - Show WireGuard Interface
