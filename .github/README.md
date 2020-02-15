@@ -5,6 +5,18 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/complexorganizations/wireguard-install)](https://github.com/complexorganizations/wireguard-install/graphs/contributors)
 [![GitHub forks](https://img.shields.io/github/forks/complexorganizations/wireguard-install?style=social)](https://github.com/complexorganizations/wireguard-install/fork)
 
+---
+**What is WireGuard?**
+
+[WireGuard](https://www.wireguard.com/) is an open-source VPN solution written in C by [Jason Donenfeld](https://www.jasondonenfeld.com), aiming to fix many of the problems that have plagued other modern server-to-server VPN offerings like IPSec/IKEv2, OpenVPN, or L2TP. It shares some similarities with other modern VPN offerings like [Tinc](https://www.tinc-vpn.org/) and [MeshBird](https://github.com/meshbird/meshbird), namely good cipher suites and minimal config. As of 2020-01 [it's been merged into the 5.6 version of the Linux kernel](https://arstechnica.com/gadgets/2020/01/linus-torvalds-pulled-wireguard-vpn-into-the-5-6-kernel-source-tree/), meaning it will ship with most Linux systems out-of-the-box.
+
+**WireGuard Goals**
+ - strong, modern security by default
+ - minimal config and key management
+ - fast, both low-latency and high-bandwidth
+ - simple internals and small protocol surface area
+ - simple CLI and seamless integration with system networking
+ 
 ### Prerequisite 
 - CentOS, Debian, Ubuntu, Arch, Fedora, Redhat, Raspbian
 - Linux Kernel 4.1 or newer
@@ -124,6 +136,15 @@ Is there WireGuard documentation?
 
 How do i install wireguard without the questions? (Headless Install) ***Server Only***
 - ```HEADLESS_INSTALL=y /etc/wireguard/wireguard-server.sh```
+
+**Official Links**
+- Homepage: https://www.wireguard.com
+- Install: https://www.wireguard.com/install/
+- QuickStart: https://www.wireguard.com/quickstart/
+- Main Git repo: https://git.zx2c4.com/WireGuard/
+- Github Mirror: https://github.com/WireGuard/WireGuard
+- Mailing List: https://lists.zx2c4.com/mailman/listinfo/wireguard
+
 ---
 ### Developing
 Use a browser based development environment:
