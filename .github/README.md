@@ -70,7 +70,7 @@ In your `/etc/wireguard/clients` directory, you will have `.conf` files. These a
 * `MTU_CHOICE` - the MTU the client will use to connect to DNS
 
 ---
-### Compatibility (Linux & Cloud Providers)
+### Compatibility with Linux Distro
 | OS              | Supported          | i386               | amd64              | armhf              | arm64              |
 | --------------  | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
 | Ubuntu 14.04 ≤  |:x:                 |:x:                 |:x:                 |:x:                 |:x:                 |
@@ -96,6 +96,7 @@ In your `/etc/wireguard/clients` directory, you will have `.conf` files. These a
 | LXC             |:x:                 |:x:                 |:x:                 |:x:                 |:x:                 |
 | OpenVZ          |:x:                 |:x:                 |:x:                 |:x:                 |:x:                 |
 
+### Compatibility with Cloud Providers
 | Cloud           | Supported          |
 | --------------  | ------------------ |
 | AWS             |:white_check_mark:  |
