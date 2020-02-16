@@ -145,15 +145,10 @@ Use a browser based development environment:
 
 [![Open in Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/complexorganizations/wireguard-install)
 
-***Debugging Server***
+***Debugging***
 ```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-server.sh -P /etc/wireguard/
-bash -x /etc/wireguard/wireguard-server.sh >> /etc/wireguard/wireguard-server.log
-```
-***Debugging Client***
-```
-wget https://raw.githubusercontent.com/complexorganizations/wireguard-installer-manager/master/wireguard-client.sh -P /etc/wireguard/
-bash -x /etc/wireguard/wireguard-server.sh >> /etc/wireguard/wireguard-client.log
+git clone https://github.com/complexorganizations/wireguard-installer-manager /etc/wireguard/
+bash -x /etc/wireguard/wireguard-(server|client).sh >> /etc/wireguard/wireguard.log
 ```
 ___
 ### Credits
