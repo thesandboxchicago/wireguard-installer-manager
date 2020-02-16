@@ -18,7 +18,7 @@
  - simple CLI and seamless integration with system networking
  
 ### Prerequisite 
-- CentOS, Debian, Ubuntu, Arch, Fedora, Redhat, Raspbian
+- CentOS, Debian, Ubuntu, Arch, Fedora, Redhat, Raspbian **Docker**
 - Linux Kernel 4.1 or newer
 - You will need root access or a user account with `sudo` privilege.
 
