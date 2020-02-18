@@ -149,7 +149,7 @@ Use a browser based development environment:
 ***Debugging***
 ```
 git clone https://github.com/complexorganizations/wireguard-installer-manager /etc/wireguard/
-bash -x /etc/wireguard/wireguard-(server|client).sh >> /etc/wireguard/wireguard.log
+bash -x /etc/wireguard/wireguard-(server|client).sh >> /etc/wireguard/wireguard-(server|client).log
 ```
 ___
 ### Credits
