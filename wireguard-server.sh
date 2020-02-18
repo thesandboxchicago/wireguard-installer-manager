@@ -643,15 +643,11 @@ function install-wireguard-server() {
     wget -O /etc/unbound/root.hints https://www.internic.net/domain/named.cache
     # Setting Client DNS For Unbound On WireGuard
     CLIENT_DNS="10.8.0.1"
-    # Allow the modification of the file
-    chattr -i /etc/resolv.conf
     # Disable previous DNS servers
     sed -i "s|nameserver|#nameserver|" /etc/resolv.conf
     sed -i "s|search|#search|" /etc/resolv.conf
     # Set localhost as the DNS resolver
     echo "nameserver 127.0.0.1" >> /etc/resolv.conf
-    # Disable modifications
-    chattr +i /etc/resolv.conf
     # Restart unbound
   if pgrep systemd-journal; then
     systemctl enable unbound
@@ -878,15 +874,11 @@ PublicKey = $SERVER_PUBKEY" >"/etc/wireguard/clients"/"$NEW_CLIENT_NAME"-$WIREGU
       rm -f /etc/unbound/unbound.conf
       # Removing Haveged Config
       rm -f /etc/default/haveged
-      # Allow the modification of the resolv file
-      chattr -i /etc/resolv.conf
       # Remove localhost as the resolver
       sed -i "s|nameserver 127.0.0.1||" /etc/resolv.conf
       # Going back to the old nameservers
       sed -i "s|#nameserver|nameserver|" /etc/resolv.conf
       sed -i "s|#search|search|" /etc/resolv.conf
-      # Disable modifications
-      chattr +i /etc/resolv.conf
     fi
       ;;
     7) ## Update the script
