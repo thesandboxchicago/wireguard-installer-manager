@@ -89,9 +89,9 @@ if [ ! -f "$WG_CONFIG" ]; then
   # Detect IPV4
   function detect-ipv4() {
     if type ping >/dev/null 2>&1; then
-      PING="ping -c3 google.com > /dev/null 2>&1"
+      PING="ping -c3 ipv4.google.com > /dev/null 2>&1"
     else
-      PING6="ping -4 -c3 google.com > /dev/null 2>&1"
+      PING6="ping -4 -c3 ipv4.google.com > /dev/null 2>&1"
     fi
     if eval "$PING"; then
       IPV4_SUGGESTION="y"
