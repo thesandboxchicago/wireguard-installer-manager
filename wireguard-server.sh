@@ -438,12 +438,12 @@ function install-wireguard-server() {
     pacman -Syu --noconfirm haveged qrencode iptables
     pacman -Syu --noconfirm wireguard-tools wireguard-arch
   fi
-  # shellcheck disable=SC2235
   if [ "$DISTRO" = 'fedora' ] && [ "$VERSION" == "32" ]; then
     dnf update -y
     dnf install kernel-headers-"$(uname -r)" kernel-devel-"$(uname -r)" -y
     dnf install qrencode wireguard-tools haveged -y
   fi
+  # shellcheck disable=SC2235
   if [ "$DISTRO" = 'fedora' ] && ( [ "$VERSION" == "30" ] || [ "$VERSION" == "31" ] ); then
     dnf update -y
     dnf copr enable jdoss/wireguard -y
