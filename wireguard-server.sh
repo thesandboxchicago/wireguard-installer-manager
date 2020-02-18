@@ -405,7 +405,7 @@ function install-wireguard-server() {
     apt-get install linux-headers-"$(uname -r)" -y
     apt-get install wireguard qrencode haveged -y
   fi
-  if [ "$DISTRO" == "ubuntu" ] && [ "$VERSION" == "18.04" ] && [ "$VERSION" == "16.04" ]; then
+  if [ "$DISTRO" == "ubuntu" ] && ( [ "$VERSION" == "16.04" ] || [ "$VERSION" == "18.04" ] ); then
     apt-get update
     apt-get install software-properties-common -y
     add-apt-repository ppa:wireguard/wireguard -y
@@ -442,7 +442,7 @@ function install-wireguard-server() {
     dnf install kernel-headers-"$(uname -r)" kernel-devel-"$(uname -r)" -y
     dnf install qrencode wireguard-tools haveged -y
   fi
-  if [ "$DISTRO" = 'fedora' ] && [ "$VERSION" == "31" ] && [ "$VERSION" == "30" ]; then
+  if [ "$DISTRO" = 'fedora' ] && ( [ "$VERSION" == "30" ] || [ "$VERSION" == "31" ] ); then
     dnf update -y
     dnf copr enable jdoss/wireguard -y
     dnf install kernel-headers-"$(uname -r)" kernel-devel-"$(uname -r)" -y
