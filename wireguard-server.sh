@@ -405,6 +405,7 @@ function install-wireguard-server() {
     apt-get install linux-headers-"$(uname -r)" -y
     apt-get install wireguard qrencode haveged -y
   fi
+  # shellcheck disable=SC2235
   if [ "$DISTRO" == "ubuntu" ] && ( [ "$VERSION" == "16.04" ] || [ "$VERSION" == "18.04" ] ); then
     apt-get update
     apt-get install software-properties-common -y
@@ -437,6 +438,7 @@ function install-wireguard-server() {
     pacman -Syu --noconfirm haveged qrencode iptables
     pacman -Syu --noconfirm wireguard-tools wireguard-arch
   fi
+  # shellcheck disable=SC2235
   if [ "$DISTRO" = 'fedora' ] && [ "$VERSION" == "32" ]; then
     dnf update -y
     dnf install kernel-headers-"$(uname -r)" kernel-devel-"$(uname -r)" -y
